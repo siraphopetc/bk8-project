@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | วัฒนธรรมไทย</title>
+    <style>
+        * {box-sizing: border-box;}
+        body {
+          margin: 0;
+          background-image: url(img/bg20.png);
+        }
+        .blog {
+            text-align: center;
+        }
+        
+        .navbar {
+          overflow: hidden;
+          background-color: #FCBC03;
+        }		
+				
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          padding: 14px 16px;
+          font-size: 17px;
+        }
+        .navbar .noactive {
+            color: #fff;
+        }
+        .navbar .active {
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+          background-color: #3B3B3B;
+          color: #fff;
+          text-decoration: none;
+        }
+        
+        .navbar a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        
+        .navbar .icon {
+          display: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .navbar a:not(:first-child) {display: none;}
+          .navbar a.icon {
+            text-decoration: none;
+            color: #fff;
+            float: right;
+            display: block;
+          }
+        }
+        @media screen and (max-width: 600px) {
+            .blog.responsive {
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+          .navbar.responsive {position: relative;}
+          .navbar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .navbar.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+        }
+        .gslide {display: none;}
+img {vertical-align: middle;}
+
+.btn {
+            height: 30px;
+            width: 100px;
+        }
+
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0s;
+}
+
+@keyframes fade { from {opacity: .4}  to {opacity: 1} }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.margindown {
+    margin: 10px;
+}
+.btn-slide {
+    border-radius: 10px;
+    border: none;
+}
+.header {
+  background-color: red;
+}
+.blogger {
+  background-color: #fff; 
+  text-align: center;
+}
+.font-h1 {
+  font-size: 23px;
+}
+.frame-1 {
+  background: url("img/fram01.jpg");
+}
+.tink-yello {
+  background-color: #FCBC03;
+  border: none;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+}
+.tink-yello-100 {
+  background-color: #FCBC03;
+  border: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+.tink-red {
+  background-color: red;
+  border: none;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+}
+.tink-red-100 {
+  background-color: red;
+  border: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+.nologin:hover {
+  background-color: #04AA6D;
+}
+        </style>
+</head>
+<body>
+  <div class="header"><br>
+    <img class="imgheader" src="https://mut.ac.th/wp-content/uploads/2022/03/LOGO-Mut-New-03-corp.png" style="height: 80px;" alt="Logo">
+    <div class="mt-3">
+      <br>
+    </div>
+  </div>
+    <div class="navbar" id="bruhhh">
+        <a href="#home" class="active">หน้าแรก</a>
+        <a href="/news/" target="_blank"class="noactive">ข่าวสาร</a>
+        <a href="/contact/" target="_blank" class="noactive">ติดต่อเรา</a>
+        <a href="./gub/" target="_blank" class="noactive">ภาพปลากอบ</a>
+        <a href="#about" class="noactive">ภาพขนมปัง</a>
+        <a class="nologin" href="/login/" target="_blank">ล็อกอิน</a>
+        <a href="javascript:void(0);" class="icon" onclick="funcnav()" style="background-color: #000; width: 20%;">
+          เมนู
+        </a>
+      </div>
+      <div class="slideshow">
+
+        <div class="gslide fade">
+          <img src="./img/s.png" style="width:100%">
+        </div>
+        
+        <div class="gslide fade">
+          <img src="./img/s2.png" style="width:100%">
+        </div>
+        
+        <div class="gslide fade">
+          <img src="./img/s3.png" style="width:100%">
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            
+        </div>
+      <div class="blog">
+          <div class="text">
+            <div class="head-web">
+              <br>
+                <button class="btn-slide" style="width: 80%;"><marquee direction="left" style="color: #000; width: 100%; font-size: 20px;">เว็บไซต์ซ้อมศิลปะหัตถกรรม by.bost&mark</marquee></button>
+                <div class="blogger">
+                  <h1 class="font-h1">วัฒนธรรมไทย (Thai Culture)</h1>
+                  <p align="left" style="margin-left: 20px;"><b><u>ความหมายของวัฒนธรรม</u></b></p>
+                  <p align="left" style="margin-left: 20px;"><b>"<u>วัฒนธรรม</u>"</b> เป็นคําที่เราคุ้นเคย ได้ถูกนํามาใช้ในชีวิตประจําวันอย่างมาก <b>"<u>วัฒนธรรม</u>"</b> เป็นศัพท์ที่บัญญัติขึ้นโดยแปลมาจากภาษาอังกฤษ คําวา ่ <b>"<u>culture</u>"</b> ในภาษาไทยวัฒนธรรมเป็นคําที่มาจากภาษาบาลีและสันสกฤต ที่รากศัพท์ประกอบมาจากคําว่า</p>
+                  <p align="left" style="margin-left: 20px;"><b>"<u>วัฒน</u>"</b> หมายถึง ความเจริญงอกงาม ความคงทนถาวร ความยั่งยืน<br><b>"<u>ธรรม</u></b>แปลวา กฎ ข้อบังคับ ระเบียบ </p>
+                  <p align="left" style="margin-left: 20px;">ดังนั้นตามความหมายรูปศัพท์ “วัฒนธรรม” หมายถึง ธรรมเป็นเหตุให้เจริญ แต่ความหมายง่าย ๆ ที่เราใช้กันคือ การปลูกฝังความเจริญงอกงาม การอบรมเลี้ยงดู ความดีงาม และความเรียบร้อย “วัฒนธรรม” ได้ถูกนํามาใช้ในลักษณะที่มีความหมายสองนัยด้วยกัน ซึ่งความหมายแรก  ใช้ ในความหมายของบุคคลทัวไปในสังคม คือ มารยาทในการดําเนินชีวิต ความหมายอีกประการหนึ่ง คือ วัฒนธรรม ตามกรอบแนวคิดหรือตามความหมายของนักสังคมศาสตร์ ที่เชื่อว่า วัฒนธรรม เป็นการอบรม เรียนรู้ การปลูกฝังในเรื่องการดําเนินชีวิตของมนุษย์ โดยหมายรวมถึงสิ่งที่มนุษย์ประดิษฐ์ขึ้น และรวมไปถึงกฎเกณฑ์ข้อบังคับต่าง ๆ </p>
+                  <p align="left" style="margin-left: 20px;"><b>"<u>ประเภทของวัฒนธรรม</u>"</b>การจัดแบ่งวัฒนธรรม สามารถแบ่งออกเป็นกลุ่มใหญ่ ๆ ได้แก่ วัฒนธรรมทางวัตถุ และ วัฒนธรรมที่ไม่ใช่วัตถุ</p>
+                  <p align="left" style="margin-left: 20px;"><b>1. <u>วัฒนธรรมที่เป็นวัตถุ</u></b> โดยเราจะพบได้ว่า วิธีการต่าง ๆ ที่มนุษย์ได้ประดิษฐ์คิดค้นขึ้นมาจนกลายเป็นสิ่งของที่ใช้อํานวยความสะดวกในการดําเนินชีวิตประจําวัน และสามารถจับต้องได้ ไม่ว่าจะเป็น เครื่องมือต่าง ๆ ตัวอาคาร ฯลฯ ล้วนจัดเป็นวัฒนธรรมที่เป็นวัตถุทั้งสิ้น</p>
+                  <p align="left" style="margin-left: 20px;"><b>2. <u>วัฒนธรรมที่ไม่ใช่วัตถุ</u></b> ซึ่งได้แก่ วิธีการคิดและแบบแผนของพฤติกรรมที่มนุษย์คิดขึ้นมา ไม่สามารถทําให้เห็นเป็นรูปร่างได้ จับต้องไม่ได้แต่มีผลต่อการดําเนินชีวิต จัดเป็นวัฒนธรรมที่ไม่ใช่วัตถุ เช่น ขนบธรรมเนียมประเพณี ศาสนา ความเชื่อ ค่านิยม ศีลธรรม จริยธรรม กฎหมาย เป็นต้น
+                  </p>
+
+                  <img src="./img/AA02.png" alt="" style="width:50%; padding-left: 10px; border-radius: 20px;" align="left">
+                  <button class="tink-red"></button>
+                  <h2><b>ความสำคัญของวัฒนธรรม</b></h2>
+                  <p> 1) <b>วัฒนธรรม</b> เป็นเครื่องสร้างระเบียบแก่สังคมมนุษย์ <b>วัฒนธรรมไทย</b> เป็นเครื่องกำหนดพฤติกรรมของสมาชิกในสังคมไทย ให้มีระเบียบแบบแผนที่ชัดเจนรวมถึงผลของการแสดงพฤติกรรมตลอดจนถึงการสร้างแบบแผนของความคิด ความเชื่อ และค่านิยมของสมาชิกให้อยู่ในรูปแบบเดียวกัน
+                  </p>
+                  <p>2) <b>วัฒนธรรม</b> ทำให้เกิดความสามัคคีความเป็นอันหนึ่งอันเดียวกัน สังคมที่มี <b>วัฒนธรรม</b> เดียวกันย่อมจะมีความรู้สึกผูกพันเดียวกัน เกิดความเป็นปึกแผ่น จงรักภักดีและอุทิศตนให้กับสังคมทำให้สังคมอยู่รอด</p>
+                  <p>3) <b>วัฒนธรรม</b> เป็นตัวกำหนดรูปแบบของสถาบัน เช่น รูปแบบของครอบครัวจะเห็นได้ว่าลักษณะของครอบครัวแต่ละสังคมต่างกันไป ทั้งนี้เนื่องจาก <b>วัฒนธรรมในสังคม</b> เป็นตัวกำหนดรูปแบบ เช่น วัฒนธรรมไทยกำหนดเป็นแบบสามีภรรยาเดียว ในอีกสังคมหนึ่งกำหนดว่าชายอาจมีภรรยาได้หลายคน หรือหญิงอาจมีสามีได้หลายคน ความสัมพันธ์ทางเพศก่อนแต่งงานเป็นสิ่งที่ดีหรือเป็นเรื่องขัดต่อศีลธรรม
+                  </p>
+                  <p>4) <b>วัฒนธรรม</b> เป็นเครื่องมือช่วยแก้ปัญหา และสนองความต้องการของ <b>มนุษย์</b> มนุษย์ไม่สามารถดำรงชีวิตภายใต้สิ่งแวดล้อมได้อย่างสมบูรณ์ ดังนั้นมนุษย์ต้องแสวงหาความรู้จากประสบการณ์ที่ตนได้รับการประดิษฐ์คิดค้นวิธีการใช้ทรัพยากรนั้นให้เกิดประโยชน์ต่อชีวิตและถ่ายทอดจากสมาชิกรุ่นหนึ่งไปสู่สมาชิกรุ่นต่อไปได้โดย <b>วัฒนธรรมของสังคม</b>
+                  </p>
+                  <p>5) <b>วัฒนธรรม</b> ช่วยให้ประเทศชาติเจริญก้าวหน้า หากสังคมใดมี <b>วัฒนธรรมที่ดีงาม</b> เหมาะสม เช่น ความมีระเบียบวินัย ขยัน ประหยัด อดทน การเห็นประโยชน์ส่วนรวมมากกว่าส่วนตัว เป็นต้น <u>สังคมนั้นย่อมจะเจริญก้าวหน้าได้อย่างรวดเร็ว</u>
+                  <p>6) <b>วัฒนธรรม</b> เป็นเครื่องแสดงเอกลักษณ์ของชาติ คำว่า เอกลักษณ์ หมายถึง ลักษณะพิเศษหรือลักษณะเด่นของบุคคลหรือสังคม ที่แสดงว่าสังคมหนึ่งแตกต่างไปจากอีกสังคมหนึ่ง เช่น <b>วัฒนธรรมการพบปะกันในสังคมไทย</b> จะมีการยกมือไหว้กันแต่ในสังคมญี่ปุ่นใช้การคำนับกัน <u>เป็นต้น</u>
+                  </p>
+                </p>
+                <button class="tink-red-100"></button>
+                <br>
+                  <div class="headerforone" align="center">
+                    <h3><b>มรดกภูมิปัญญาทางวัฒนธรรม</b></h3>
+                    <p align="left" style="margin-left: 20px;">หมายถึง <b>การปฏิบัติ การแสดงออก ความรู้ ทักษะ ตลอดจนเครื่องมือ วัตถุ สิ่งประดิษฐ์</b> และพื้นที่ทางวัฒนธรรมที่เกี่ยวเนื่องกับสิ่งเหล่านั้น ซึ่งชุมชน กลุ่มชน หรือในบางกรณีปัจเจกบุคคลยอมรับว่า เป็นส่วนหนึ่งของมรดกทาง <b>วัฒนธรรมของตน</b> มรดกภูมิปัญญา ทางวัฒนธรรมซึ่งถ่ายทอดจากคนรุ่นหนึ่งไปยังคนอีกรุ่นหนึ่งนี้ เป็นสิ่งซึ่งชุมชนและกลุ่มชนสร้างขึ้นมาอย่างสมํ่าเสมอ เพื่อตอบสนองต่อสภาพแวดล้อมของตน เป็นปฏิสัมพันธ์ของพวกเขาที่มีต่อธรรมชาติและประวัติศาสตร์ของตน และทำให้คนเหล่านั้นเกิดความภูมิใจในตัวตนและความรู้สึกสืบเนื่องก่อให้เกิดความเคารพต่อความหลากหลายทาง <b>วัฒนธรรม</b> และการคิดสร้างสรรค์ของมนุษย์ <b></b>
+                    </p>
+                  </div>
+                  <img src="./img/AA04.png" alt="" style="width:50%; padding-left: 10px;" align="right">
+                  <button class="tink-yello"></button>
+                  <h2><b>วรรณกรรมพื้นบ้านและภาษา</b></h2>
+                  <p align="left" style="margin-left: 20px;"><b><u>ภาษา</u></b> หมายถึง เครื่องมือที่ใช้สื่อสารในวิถีชีวิตของแต่ละกลุ่มชน ซึ่งสะท้อนโลกทัศน์ ภูมิปัญญา และวัฒนธรรมของแต่ละกลุ่มชน ทั้งเสียงพูด ตัวอักษร หรือสัญลักษณ์ ภาษา แบ่งออกเป็น 4 ประเภท ดังต่อไปนี้</p>
+                <p align="left" style="margin-left: 20px;"><b>(1) ภาษาไทย</b> หมายความว่า ภาษาประจำชาติ หรือภาษาราชการที่ใช้ในประเทศไทย</p>
+                <p align="left" style="margin-left: 20px;"><b>(2) ภาษาไทยถิ่น</b> หมายความว่า ภาษาไทยที่ใช้สื่อสารในแต่ละภูมิภาค ได้แก่ ภาษาไทยถิ่นกลางภาษาไทยถิ่นอีสาน ภาษาไทยถิ่นเหนือ และภาษาไทยถิ่นใต้</p>
+                <p align="left" style="margin-left: 20px;"><b>(3) ภาษากลุ่มชาติพันธุ์</b> หมายความว่า ภาษาที่ใช้ติดต่อสื่อสารในชุมชนท้องถิ่นของประเทศไทย เช่น ภาษาเขมรถิ่นไทย ภาษาม้ง ภาษาชอง ภาษามอแกน ภาษาลื้อ ภาษาพวน หรือภาษาอื่นที่มีลักษณะเป็นภาษาชาติพันธุ์</p>
+                <p align="left" style="margin-left: 20px;"><b>(4) ภาษาสัญลักษณ์</b> หมายความว่า ภาษาที่ใช้ติดต่อสื่อสารด้วยภาษามือ ภาษาท่าทาง อักษร หรือสัญลักษณ์อื่นที่ใช้ในการติดต่อสื่อสาร</p>
+                <button class="tink-yello-100"></button>
+                <br><br><br><br>
+                <hr>
+                <br>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <script>
+      function funcnav() {
+        var x = document.getElementById("bruhhh");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+      let slideIndex = 0;
+        xtag();
+        
+        function xtag() {
+          let i;
+          let slides = document.getElementsByClassName("gslide");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(xtag, 2000);
+        }
+      </script>
+</body>
+</html>
