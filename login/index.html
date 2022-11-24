@@ -26,11 +26,33 @@
 <body>
     <div class="from text-center">
         <h1 class="h1-textlogin" style="font-size: 100%;"><b>ล็อกอินนนนนนนนนนนนนนนนนนนนนนน</b></h1>
-        <input class="int" type="text" name="username" placeholder="Enter Your Username" id="">
-        <div class="mt"></div>
-        <input class="int" type="password" name="password" id="" placeholder="Enter our Password">
-        <div class="mt"></div>
-        <button class="btn btn-primary">Login</button>
+    <form id="form_id" method="post" name="myform">
+        <input class="int" type="text" name="username" placeholder="Enter Your Username" id="username"/><div class="mt"></div>
+        <input class="int" type="password" name="password" placeholder="Enter our Password" id="password"/><div class="mt"></div>
+        <input class="btn btn-primary" type="button" value="Login" id="submit" onclick="validate()"/>
+        </form>
     </div>
+    <script>
+var attempt = 9999; 
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "admin+"){
+alert ("Login successfully");
+window.location = "homepage";
+return false;
+}
+else{
+attempt --;
+alert("User Password Not found");
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+    </script>
 </body>
 </html>
